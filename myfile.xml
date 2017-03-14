@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<conversion>
+  <server>localhost</server>
+  <database>xxx</database>
+  <userId>xxx</userId>
+  <password>xxx#</password>
+  <dataSourceType>MySql</dataSourceType>
+  <output>
+    <table>h_nationalitet</table>
+    <adlibDatabase>c:\data\thesau.inf</adlibDatabase>
+    <dataset>thesau</dataset>
+    <format>AdlibDatabase</format>
+    <limit>0</limit>
+    <updateTag>rI</updateTag>
+    <field>
+      <source>nationalitetId</source>
+      <destination>rg</destination>
+      <noMatch>IgnoreValue</noMatch>
+      <parseAs>Text</parseAs>
+      <parseErrorAction>IgnoreValue</parseErrorAction>
+      <parseErrorField></parseErrorField>
+    </field>
+    <field>
+      <source>nationalitetId</source>
+      <destination>rI</destination>
+      <noMatch>IgnoreValue</noMatch>
+      <parseAs>Text</parseAs>
+      <formatString>h_nationalitet:{0}</formatString>
+      <parseErrorAction>IgnoreValue</parseErrorAction>
+      <parseErrorField></parseErrorField>
+    </field>
+    <field>
+      <source>nationalitet</source>
+      <destination>te</destination>
+      <language IsInvariant="true">da-DK</language>
+      <noMatch>IgnoreValue</noMatch>
+      <parseAs>Text</parseAs>
+      <parseErrorAction>IgnoreValue</parseErrorAction>
+      <parseErrorField></parseErrorField>
+    </field>
+    <field>
+      <source>nationalitet_en</source>
+      <destination>te</destination>
+      <language IsInvariant="false">en-US</language>
+      <noMatch>IgnoreValue</noMatch>
+      <parseAs>Text</parseAs>
+      <parseErrorAction>IgnoreValue</parseErrorAction>
+      <parseErrorField></parseErrorField>
+    </field>
+    <literal>
+      <destination>do</destination>
+      <text>NATIONALITY</text>
+    </literal>
+    <literal>
+      <destination>ts</destination>
+      <text>1</text>
+    </literal>
+    <logFile></logFile>
+    <errorFile></errorFile
+    <processingOptions>IgnoreUnresolvedLinkExceptions, IgnoreGroups, IgnoreUnkownDomainExceptions, IgnoreMultipleLinkResolveExceptions, DoNotFillDefaults</processingOptions>
+    <startFrom>0</startFrom>
+  </output>
+</conversion>
