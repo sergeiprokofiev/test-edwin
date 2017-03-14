@@ -7,10 +7,10 @@
   <dataSourceType>MySql</dataSourceType>
   <output>
     <table>h_nationalitet</table>
-    <adlibDatabase>c:\data\thesau.inf</adlibDatabase>
+    <adlibDatabase>c:\model\data\thesau.inf</adlibDatabase>
     <dataset>thesau</dataset>
     <format>AdlibDatabase</format>
-    <limit>0</limit>
+    <limit>10</limit>
     <updateTag>rI</updateTag>
     <field>
       <source>nationalitetId</source>
@@ -32,7 +32,7 @@
     <field>
       <source>nationalitet</source>
       <destination>te</destination>
-      <language IsInvariant="true">da-DK</language>
+      <language IsInvariant="false">da-DK</language>
       <noMatch>IgnoreValue</noMatch>
       <parseAs>Text</parseAs>
       <parseErrorAction>IgnoreValue</parseErrorAction>
